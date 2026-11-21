@@ -1,8 +1,8 @@
 class ZshRemote < Formula
   desc "Zsh fzf pickers for SSH, SFTP, Telnet and FTP hosts, plus config backups"
   homepage "https://github.com/iskerwin/zsh-remote"
-  url "https://github.com/iskerwin/zsh-remote/archive/refs/tags/v0.6.1.tar.gz"
-  sha256 "172c543bf2890652f9ef9cad59af4ed5fed43a18384706fa5c756f41f5ca7270"
+  url "https://github.com/iskerwin/zsh-remote/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "a97a71ff41f951abacf2cc6d4bd42cbb39caff7b8445f57ec711eeefb54ab709"
   license "MIT"
 
   depends_on "fzf"
