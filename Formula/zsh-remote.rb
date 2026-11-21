@@ -1,5 +1,5 @@
 class ZshRemote < Formula
-  desc "SSH, SFTP, Telnet and FTP host pickers, ssh-agent manager and config backups for zsh"
+  desc "Zsh fzf pickers for SSH, SFTP, Telnet and FTP hosts, plus config backups"
   homepage "https://github.com/iskerwin/zsh-remote"
   url "https://github.com/iskerwin/zsh-remote/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "db472be49bdcaeeb0266a615da8b31c4f1ea48a05ce444c797b1facb87d6e73a"
@@ -23,7 +23,12 @@ class ZshRemote < Formula
   end
 
   test do
-    assert_equal "ok", shell_output("zsh -f -c 'compdef() { :; }; ssh-add() { return 1; }; " \
-                                    "source #{pkgshare}/zsh-remote.plugin.zsh && whence ssh-pick >/dev/null && print ok'").chomp
+    (testpath/"load.zsh").write <<~ZSH
+      compdef() { :; }
+      ssh-add() { return 1; }
+      source #{pkgshare}/zsh-remote.plugin.zsh
+      whence ssh-pick >/dev/null && print ok
+    ZSH
+    assert_equal "ok", shell_output("zsh -f #{testpath}/load.zsh").chomp
   end
 end
