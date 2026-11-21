@@ -1,8 +1,8 @@
 class ZshRemote < Formula
   desc "Zsh fzf pickers for SSH, SFTP, Telnet and FTP hosts, plus config backups"
   homepage "https://github.com/iskerwin/zsh-remote"
-  url "https://github.com/iskerwin/zsh-remote/archive/refs/tags/v0.4.2.tar.gz"
-  sha256 "455351faee9f7b3c02857d65e70518bcfaf78cffa489d63fd0ecf5cb623eae08"
+  url "https://github.com/iskerwin/zsh-remote/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "4021b586166cc30782829fecafa1fe6c68d54f1b41207cba05c4fac431e65778"
   license "MIT"
 
   depends_on "fzf"
@@ -17,7 +17,7 @@ class ZshRemote < Formula
     <<~EOS
       To activate zsh-remote, add to your ~/.zshrc after compinit:
         source #{opt_pkgshare}/zsh-remote.plugin.zsh
-      Optional tools (lftp, mc, telnet, expect, ChromaTerm): run remote-doctor
+      Optional tools (tinge, lftp, mc, telnet, expect): run remote-doctor
       to see which are installed and how to install the rest.
       For the full look shared with other tools, also install iskerwin/tap/zsh-ui.
     EOS
