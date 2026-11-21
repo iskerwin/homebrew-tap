@@ -1,8 +1,8 @@
 class Tinge < Formula
-  desc "Highlight terminal output with regex rules, built in for network devices"
+  desc "Highlight terminal output with regex rules, built in for network devices and Linux servers"
   homepage "https://github.com/iskerwin/tinge"
-  url "https://github.com/iskerwin/tinge/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "a5ed8f7900449b7c8741b3115bbb2242e87b571e75928deb5caaa731ecfb784f"
+  url "https://github.com/iskerwin/tinge/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "726420d97601303b6a9494461ec4a5423cafcc3573ebb0adf290f29505a33888"
   license "MIT"
 
   depends_on "go" => :build
