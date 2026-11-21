@@ -1,8 +1,8 @@
 class CommandFinder < Formula
   desc "Zsh fzf picker for your own aliases, functions and documented commands"
   homepage "https://github.com/iskerwin/command-finder"
-  url "https://github.com/iskerwin/command-finder/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "565c45dea513da0c06158080fa40f8fa1a38d16977ac754d566f4de5dca63816"
+  url "https://github.com/iskerwin/command-finder/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "b7ba47897680586b6153fcf078e8238fdae64fbfef3577f4b7456f389e8cdf4f"
   license "MIT"
 
   depends_on "fzf"
