@@ -1,5 +1,7 @@
 # homebrew-tap
 
+English | [简体中文](README.zh-CN.md)
+
 Homebrew formulae by iskerwin.
 
 ```sh
